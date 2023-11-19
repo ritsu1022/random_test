@@ -10,8 +10,13 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+	int i;
+	srand((unsigned)time(NULL));
+	for(i=0; i<10; i++) {
+		printf("%d\n",rand());
+	}
 	return EXIT_SUCCESS;
 }
